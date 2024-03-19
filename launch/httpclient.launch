@@ -1,0 +1,8 @@
+<launch>
+
+
+<node name="http_client" pkg="whi_httpclient_serv" type="httpclient" output="screen" >
+    <rosparam command="load" file="$(find whi_httpclient_serv)/config/config.yaml" />
+</node>
+
+</launch>
